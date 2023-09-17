@@ -1,0 +1,216 @@
+$black: #232323;
+$text: #3C3C3C;
+
+@import 'sass/margin';
+@import 'sass/padding';
+@import 'sass/buttons';
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: #3C3C3C;
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.announcement-bar {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 7px 0;
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.header-icons {
+    display: flex;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: 27px;
+    }
+}
+
+.navbar-nav {
+    margin: 0 auto;
+
+    .nav-item {
+        margin: 0 11px;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+    }
+}
+
+.banner-slider-item {
+    display: flex;
+    align-items: center;
+    min-height: 551px;
+}
+
+.banner-slider-caption {
+    width: 100%;
+    text-align: center;
+
+    h2 {
+        font-size: 52px;
+        font-weight: bold;
+        color: $black;
+    }
+}
+
+.banner-slider-item--1 {
+    background: url(https://placehold.co/1440x551) no-repeat center center;
+    background-size: cover;
+}
+
+.section-feature-categories {
+    .cat-item {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: $text;
+    }
+}
+
+.section-categories-with-image {
+    .cat-item {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        h5 {
+            position: absolute;
+            top: 50%;
+            // width: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-align: center;
+            display: inline-block;
+            margin-bottom: 0;
+            background-color: #000;
+            color: #fff;
+            font-weight: bold;
+            padding: 0 3px;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+    }
+}
+
+.new-arrivals-category {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin: 0 25px;
+
+        a {
+            text-decoration: none;
+            color: #828282;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.product-card {
+    .product-card-img {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .product-card-details {
+        padding: 0 16px;
+    }
+
+    .product-card-price {
+        margin-bottom: 1rem;
+    }
+}
+
+.featured-categories-img {
+    aspect-ratio: 1/1.05;
+    background: none no-repeat center top;
+    background-size: cover;
+    margin-bottom: 40px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 79px;
+    }
+}
+
+.footer-top {
+    background-color: #f8f8f8;
+    padding: 66px 0;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.footer-widgets {
+
+    h5 {
+        font-weight: normal;
+        font-size: 17px;
+        text-transform: uppercase;
+        margin-bottom: 19px;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            margin-bottom: 6px;
+
+            a {
+                text-decoration: none;
+                color: #3C3C3C;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.footer-copyright {
+    padding: 30px 0;
+    color: #707070;
+
+    .col2 {
+        @media (min-width: 768px) {
+            text-align: right;
+        }
+    }
+}
